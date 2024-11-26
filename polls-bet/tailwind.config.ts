@@ -6,18 +6,28 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        sans: [
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
+          "sans-serif"
+        ],
+      },
       colors: {
-        dark: {
-          primary: '#0f172a',
-          secondary: '#1e293b',
-          accent: '#334155'
-        }
-      }
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        card: 'var(--card-background)',
+        'text-primary': 'var(--text-primary)',
+        'text-secondary': 'var(--text-secondary)',
+        'purple-primary': 'var(--purple-primary)',
+        'purple-hover': 'var(--purple-hover)',
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
