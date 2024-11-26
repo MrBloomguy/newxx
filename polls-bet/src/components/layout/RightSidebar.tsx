@@ -3,7 +3,7 @@
 import { dummyFeed } from '@/lib/dummyData';
 import { Poll } from '@/lib/types';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { formatDistanceToNow } from 'date-fns';
+import { format, formatDistance, formatDistanceToNow } from 'date-fns';
 
 export default function RightSidebar() {
   const trendingPolls = dummyFeed
