@@ -6,6 +6,8 @@ import MobileNav from "@/components/layout/MobileNav";
 
 export default function Home() {
   return (
+
+    
     <div className="min-h-screen bg-background pb-16 lg:pb-0"> {/* Added padding bottom for mobile nav */}
       <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
